@@ -1,0 +1,54 @@
+<section class="about_me_section" id="aboutMeSection">
+    <div class="foto_portfolio">
+        <img class="foto_princ" src="assets/img/JotaD_0_0.png">
+        <div class="new_buttonCV" id="buttonEN">
+            <a href="assets/documents/JuanDeSantos_EN.pdf" target="_blank">
+                <button class="buttonCV">Download CV</button>
+            </a>
+        </div>
+        <div class="new_buttonCV none" id="buttonDE">
+            <a href="assets/documents/JuanDeSantos_DE.pdf" target="_blank">
+                <button class="buttonCV">CV Herunterladen</button>
+            </a>
+        </div>
+        <div class="new_buttonCV none" id="buttonES">
+            <a href="assets/documents/JuanDeSantos_ES.pdf" target="_blank">
+                <button class="buttonCV">Descargar CV</button>
+            </a>
+        </div>
+    </div>
+    <div class="aboutme_contain">
+        <div class="aboutme_title_cont">
+            <a class="aboutme_title">{{ hello }}</a>
+        </div>
+        <div class="aboutme_resum">
+            <div class="about_me_description">
+                <a id="description" class="aboutme_text">{{ description }}</a>
+            </div>
+        </div>
+        <div class="all_knowledge">
+            <div class="knowledge_title_cont">
+                <a id="knowledgeTitle" class="knowledge_title"></a>
+            </div>
+            <div class="knowledge_container wrap-center" id="knowledgeContainer">
+                <div *ngFor="let knowledge of knowledgeContainer" class="knowledge column-center-center">
+                    <img class="knowledge_img" [src]="knowledge.icon">
+                    <a class="knowledge_type" id="knowledgeType">{{ knowledge.type }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="knowledge_responsive">
+        <div class="knowledge_title_cont">
+            <a id="knowledgeTitle" class="knowledge_title"></a>
+        </div>
+        <div class="knowledge_container_resp wrap-center" id="knowledgeContainerResp">
+            <div *ngFor="let knowledge of knowledgeContainerResp" class="knowledge column-center-center">
+                <img class="knowledge_img" [src]="knowledge.icon">
+                <a class="knowledge_type" id="knowledgeType">{{ knowledge.type }}</a>
+            </div>
+        </div>
+    </div>
+
+
+</section>

@@ -1,0 +1,175 @@
+/*home container*/
+.title_portfolio {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.home_social_network {
+    padding: 20px;
+    height: 100%;
+    padding-right: 54px;
+    z-index: 1
+}
+
+.social_network {
+    transform: rotate(90deg);
+    width: 140px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.sozial_line {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    transform: rotate(-45deg);
+}
+
+.home_icon_g {
+    width: 32px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.home_icon_l {
+    width: 27px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.home_icon_t {
+    width: 27px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 82px);
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (width < 1200px) {
+    .home_social_network {
+        padding-right: 0;
+    }
+}
+
+@media (width < 1120px) {
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home_container {
+        flex-direction: column;
+    }
+
+    .home_social_network {
+        flex-direction: initial !important;
+        padding: 0;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .social_network {
+        transform: rotate(0deg);
+    }
+
+    .sozial_line {
+        transform: rotate(225deg);
+        margin-top: 6px;
+    }
+
+    .title_portfolio {
+        align-items: self-end !important;
+    }
+}
+
+@media(width < 960px) {
+    .title_portfolio {
+        flex-direction: column;
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+}
+
+@media(width < 650px) {
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media(width < 480px) {
+    .home_social_network {
+        gap: 13px;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+
+    .social_network {
+        width: auto;
+        font-size: 17px;
+    }
+
+    .home_icon_g {
+        padding: 0;
+    }
+
+    .home_icon_l {
+        padding: 0;
+    }
+
+    .home_icon_t {
+        padding: 0;
+    }
+}
+
+@media(width < 340px) {
+    .title {
+        font-size: 15px;
+    }
+
+    .social_network {
+        font-size: 13px;
+    }
+
+    .sozial_line {
+        height: 21px;
+    }
+
+    .home_icon_g {
+        width: 22px;
+    }
+
+    .home_icon_l {
+        width: 22px;
+    }
+
+    .homeˇ_icon_t {
+        width: 22px;
+    }
+}

@@ -1,0 +1,35 @@
+<section class="contact_section" id="contactSection">
+    <div class="contact_cont">
+        <div *ngFor="let info of myInfo" class="info_container" id="infoContainer">
+            <a class="info_type info_info">{{info.name}}</a>
+            <img class="info_linie" src="assets/icons/linieBlue.png"><img />
+            <a class="info_type" href="tel:+491786082868">{{ info.phone }}</a>
+            <img class="info_linie linie_600" src="assets/icons/linieBlue.png"><img />
+            <a class="info_type info_info" href="mailto:juanj.desantos@gmail.com">{{ info.email }}</a>
+            <img class="info_linie" src="assets/icons/linieBlue.png"><img />
+            <a class="info_type">{{ info.address }}</a>
+        </div>
+        <div class="contact_social_network">
+            <a href="https://github.com/JotaDev09" target="_blank">
+                <img src="assets/icons/github.svg" class="social_icon_g"></a>
+            <a href="https://www.linkedin.com/in/jota-developer/" target="_blank">
+                <img src="assets/icons/linkedin.svg" class="social_icon_l"></a>
+            <a href="https://twitter.com/JotaSG9" target="_blank">
+                <img src="assets/icons/twitter.svg" class="social_icon_t"></a>
+        </div>
+    </div>
+    <div class="contact_foot">
+        <div class="designBy">
+            <span class="design">{{ design }}<a class="design_by" href="https://www.linkedin.com/in/alexcoconut/"
+                    target="_blank">Alex
+                    de
+                    Santos</a></span>
+            <span class="design_">{{ design_ }}<a class="design_by"
+                    href="https://www.linkedin.com/in/juan-de-santos-a98207275/" target="_blank">Juan de
+                    Santos</a>.</span>
+        </div>
+        <div>
+            <a class="attributions" target="_blank" routerLink="/attributions">{{ attributions }}</a>
+        </div>
+    </div>
+</section>

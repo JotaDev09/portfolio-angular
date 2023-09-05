@@ -1,0 +1,330 @@
+/*about me container*/
+.about_me_section {
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.foto_portfolio {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto_princ {
+    width: 300px;
+}
+
+.aboutme_contain {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.aboutme_title {
+    font-size: 25px;
+    color: #00CFFF;
+}
+
+.about_me_description {
+    width: 730px;
+    text-align: justify;
+}
+
+.aboutme_text {
+    font-size: 17px;
+    color: #2A2A79;
+}
+
+.aboutme_resum {
+    display: flex;
+    width: 730px;
+    padding-top: 7px;
+}
+
+.new_buttonCV {
+    padding-top: 20px;
+    border: none;
+}
+
+.buttonCV {
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border: 1px solid #2A2A79;
+    background-color: #F5F5F5;
+    padding: 12px;
+    color: #2A2A79;
+
+    &:hover {
+        border: 1px solid #00CFFF;
+    }
+}
+
+/*knowledge container*/
+.all_knowledge {
+    width: 730px;
+    padding-top: 53px;
+}
+
+.knowledge_responsive {
+    display: none;
+}
+
+.knowledge_title_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.knowledge_title {
+    font-size: 25px;
+    color: #00CFFF;
+}
+
+.knowledge_container {
+    width: 100%;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.knowledge {
+    width: calc(25% - 10px);
+    height: 107px;
+    gap: 30px;
+}
+
+.knowledge_img {
+    width: 60px;
+}
+
+.knowledge_type {
+    color: #2A2A79;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+@media(width < 1200px) {
+    .foto_portfolio {
+        width: 282px;
+    }
+
+    .foto_princ {
+        width: 270px;
+    }
+
+    .about_me_section {
+        padding: 90px 10px;
+    }
+
+    .aboutme_contain {
+        padding-left: 20px;
+    }
+
+    .aboutme_resum {
+        width: 690px;
+        padding-top: 4px;
+    }
+
+    .about_me_description {
+        width: 690px;
+    }
+
+    .aboutme_text {
+        font-size: 16px;
+    }
+
+    .all_knowledge {
+        width: 690px;
+        padding-top: 34px;
+    }
+
+
+}
+
+@media(width < 1000px) {
+    .about_me_section {
+        padding: 60px 10px;
+    }
+
+    .foto_portfolio {
+        width: 239px;
+    }
+
+    .foto_princ {
+        width: 232px;
+    }
+
+    .buttonCV {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .aboutme_title {
+        font-size: 20px;
+    }
+
+    .aboutme_resum {
+        width: 520px;
+    }
+
+    .about_me_description {
+        width: 520px;
+    }
+
+    .aboutme_text {
+        font-size: 13px;
+    }
+
+    .all_knowledge {
+        width: 520px;
+        padding-top: 26px;
+    }
+
+    .knowledge_title {
+        font-size: 20px;
+    }
+
+    .knowledge_container {
+        padding-top: 8px;
+    }
+
+    .knowledge {
+        height: 75px;
+        gap: 8px;
+    }
+
+    .knowledge_img {
+        width: 50px;
+    }
+}
+
+@media (width < 800px) {
+    .about_me_section {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .foto_portfolio {
+        width: 189px;
+        flex-basis: calc(30% - 10px);
+    }
+
+    .foto_princ {
+        width: 182px;
+    }
+
+    .buttonCV {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .aboutme_contain {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .aboutme_title {
+        font-size: 17px;
+    }
+
+    .aboutme_resum {
+        width: 370px;
+    }
+
+    .about_me_description {
+        width: 370px;
+    }
+
+    .aboutme_text {
+        font-size: 11px;
+    }
+
+    .all_knowledge {
+        display: none;
+    }
+
+    .knowledge_responsive {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding-top: 5px;
+    }
+
+    .knowledge_title_cont {
+        padding-bottom: 10px;
+    }
+
+    .knowledge_title {
+        font-size: 17px;
+    }
+
+    .knowledge {
+        height: 75px;
+        gap: 8px;
+    }
+
+    .knowledge_img {
+        width: 40px;
+    }
+
+    .knowledge_type {
+        font-size: 11px;
+    }
+}
+
+@media (width < 600px) {
+    .about_me_section {
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 10px;
+
+    }
+
+    .aboutme_contain {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .knowledge_responsive {
+        padding-top: 15px;
+    }
+
+    .knowledge_img {
+        width: 35px;
+    }
+}
+
+@media (width < 400px) {
+
+    .aboutme_resum {
+        width: 305px;
+    }
+
+    .about_me_description {
+        width: 305px;
+    }
+
+    .knowledge_responsive {
+        padding-top: 15px;
+    }
+
+    .knowledge_container_resp {
+        gap: 13px;
+    }
+
+}
+
+@media (width < 340px) {
+    .aboutme_resum {
+        width: 210px;
+    }
+
+    .about_me_description {
+        width: 210px;
+    }
+}
