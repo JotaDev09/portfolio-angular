@@ -3,17 +3,17 @@
         <img class="foto_princ" src="assets/img/JotaD_0_0.png">
         <div class="new_buttonCV" id="buttonEN">
             <a href="assets/documents/JuanDeSantos_EN.pdf" target="_blank">
-                <button class="buttonCV">Download CV</button>
+                <button class="buttonCV" *ngIf="selectedLanguage === 'english'">Download CV</button>
             </a>
         </div>
-        <div class="new_buttonCV none" id="buttonDE">
+        <div class="new_buttonCV" id="buttonDE">
             <a href="assets/documents/JuanDeSantos_DE.pdf" target="_blank">
-                <button class="buttonCV">CV Herunterladen</button>
+                <button class="buttonCV" *ngIf="selectedLanguage === 'german'">CV Herunterladen</button>
             </a>
         </div>
-        <div class="new_buttonCV none" id="buttonES">
+        <div class="new_buttonCV" id="buttonES">
             <a href="assets/documents/JuanDeSantos_ES.pdf" target="_blank">
-                <button class="buttonCV">Descargar CV</button>
+                <button class="buttonCV" *ngIf="selectedLanguage === 'spanish'">Descargar CV</button>
             </a>
         </div>
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit{
-  projectsTitle: string = "PROJECTS";
+  projectsTitle: string = "";
 
   projects = [
     {
@@ -49,8 +50,31 @@ export class ProjectsComponent implements OnInit{
 
   projectsContainer: any[] = [];
 
+  constructor(private languageService: LanguageService) {}
+
   ngOnInit() {
+    this.languageService.currentLanguage$.subscribe((newLanguage: string) => {
+      this.updateText(newLanguage);
+    });
+
+    this.updateText(this.languageService.getCurrentLanguage());
     
+  }
+
+  updateText(language: string) {
+    switch (language) {
+      case 'english':
+        this.projectsTitle = "PROJECTS";
+        break;
+      case 'spanish':
+        this.projectsTitle = "PROYECTOS";
+        break;
+      case 'german':
+        this.projectsTitle = "PROJEKTE";
+        break;
+      default:
+        break;
+    }
   }
 
   openWebsite(websiteUrl: string) {

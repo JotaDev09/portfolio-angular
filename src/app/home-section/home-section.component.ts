@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-home-section',
@@ -13,11 +14,19 @@ export class HomeSectionComponent implements OnInit{
   typingSpeed = 60;
   pause = 2000
 
-  title: string = "I'M";
-  follow: string = "FOLLOW ME";
+  title: string = "";
+  follow: string = "";
+
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
     this.type();
+
+    this.languageService.currentLanguage$.subscribe((newLanguage: string) => {
+      this.updateMenu(newLanguage);
+    });
+
+    this.updateMenu(this.languageService.getCurrentLanguage());
   }
 
   type() {
@@ -46,4 +55,23 @@ export class HomeSectionComponent implements OnInit{
       setTimeout(() => this.type(), this.typingSpeed);
     }
   }
+
+  updateMenu(language: string) {
+    switch (language) {
+      case 'english':
+        this.title = "I'M ";
+        this.follow = "FOLLOW ME";
+        break;
+      case 'spanish':
+        this.title = "SOY ";
+        this.follow = "SÍGUEME";
+        break;
+      case 'german':
+        this.title = "ICH BIN ";
+        this.follow = "FOLGE MIR";
+        break;
+      default:
+        break;
+    }
+}
 }
