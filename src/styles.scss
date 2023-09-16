@@ -1,72 +1,82 @@
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat';
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
 }
 
 .flex-center-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .column-center-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .space-around-flex-start {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .center-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .column-center-evenly {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .wrap-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .fp_section {
-    height: 100vh;
-    margin-top: 115px;
+  height: 100vh;
+  margin-top: 115px;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 @media (width < 800px) {
-    .fp_section {
-        margin-top: 90px;
-    }
+  .fp_section {
+    margin-top: 90px;
+  }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

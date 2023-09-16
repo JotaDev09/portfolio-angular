@@ -27,9 +27,9 @@ export class ProjectsComponent implements OnInit {
   projects = [
     {
       name: 'Portfolio',
-      github: 'https://github.com/JotaDev09/portfolio.git',
+      github: 'https://github.com/JotaDev09/portfolio-angular',
       screenshot: 'assets/img/portfolio.png',
-      website: 'https://jotadev09.github.io/portfolio/',
+      website: 'https://juan-desantos.developerakademie.net/portfolio',
       type: ['All', 'Angular', 'Typescript', 'SASS', 'HTML'],
     },
     {
@@ -50,7 +50,7 @@ export class ProjectsComponent implements OnInit {
       name: 'Ring of Fire',
       github: ' https://github.com/JotaDev09/Ring-Of-Fire',
       screenshot: 'assets/img/ringoffire.jpg',
-      website: '',
+      website: 'https://juan-desantos.developerakademie.net/ringoffire/',
       type: ['All', 'Angular', 'Typescript', 'SASS', 'HTML'],
     },
     {

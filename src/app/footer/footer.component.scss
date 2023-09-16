@@ -58,13 +58,18 @@
 }
 
 .contact_foot {
-  height: 8px;
+  height: 16px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.designBy {
+  display: flex;
+  align-items: center;
 }
 
 .design_by {
@@ -98,6 +103,7 @@
 
 .credits {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -220,6 +226,12 @@
 
   .social_icon_t {
     width: 26px;
+  }
+}
+
+@media (width < 400px) {
+  .contact_foot {
+    flex-direction: column;
   }
 }
 
