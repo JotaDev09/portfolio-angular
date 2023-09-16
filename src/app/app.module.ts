@@ -9,22 +9,35 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { AttributionsComponent } from './attributions/attributions.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WebSiteCompleteComponent } from './web-site-complete/web-site-complete.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AttributionsComponent,
     HeadComponent,
     HomeSectionComponent,
     AboutMeSectionComponent,
-    ProjectsComponent,
     FooterComponent,
-    AttributionsComponent
+    WebSiteCompleteComponent,
+    ImpressumComponent,
   ],
   imports: [
+    ProjectsComponent,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

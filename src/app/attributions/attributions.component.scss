@@ -1,44 +1,43 @@
 body {
-    margin: 0;
-    background-color: #f5f5f5;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
 .attributions {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title_att {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .attributions_title {
-    font-size: 25px;
-    color: #00CFFF;
+  font-size: 25px;
+  color: #00cfff;
 }
 
 .attributions_text {
-    font-size: 17px;
-    color: #2A2A79;
+  font-size: 17px;
+  color: #2a2a79;
 }
 
 .attributions_list {
-    padding-top: 20PX;
-    padding-bottom: 20PX;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    li {
-        font-size: 17px;
-        color: #2A2A79;
-    }
+  li {
+    font-size: 17px;
+    color: #2a2a79;
+  }
 
-    li a {
-        text-decoration: none;
-        color: #2A2A79;
-    }
+  li a {
+    text-decoration: none;
+    color: #2a2a79;
+  }
 
-    li a:hover {
-        color: #00cfff;
-    }
+  li a:hover {
+    color: #00cfff;
+  }
 }

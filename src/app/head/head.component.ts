@@ -4,7 +4,7 @@ import { LanguageService } from '../language.service';
 @Component({
   selector: 'app-head',
   templateUrl: './head.component.html',
-  styleUrls: ['./head.component.scss']
+  styleUrls: ['./head.component.scss'],
 })
 export class HeadComponent implements OnInit {
   menuHome: string = '';
@@ -26,22 +26,22 @@ export class HeadComponent implements OnInit {
   updateMenu(language: string) {
     switch (language) {
       case 'english':
-        this.menuHome = "HOME";
-        this.menuMe = "ABOUT ME";
-        this.menuProjects = "PROJECTS";
-        this.menucontact = "CONTACT";
+        this.menuHome = 'HOME';
+        this.menuMe = 'ABOUT ME';
+        this.menuProjects = 'PROJECTS';
+        this.menucontact = 'CONTACT';
         break;
       case 'spanish':
-        this.menuHome = "INICIO";
-        this.menuMe = "SOBRE MI";
-        this.menuProjects = "PROYECTOS";
-        this.menucontact = "CONTACTO";
+        this.menuHome = 'INICIO';
+        this.menuMe = 'SOBRE MI';
+        this.menuProjects = 'PROYECTOS';
+        this.menucontact = 'CONTACTO';
         break;
       case 'german':
-        this.menuHome = "HOME";
-        this.menuMe = "ÜBER MICH";
-        this.menuProjects = "PROJEKTE";
-        this.menucontact = "KONTAKT";
+        this.menuHome = 'HOME';
+        this.menuMe = 'ÜBER MICH';
+        this.menuProjects = 'PROJEKTE';
+        this.menucontact = 'KONTAKT';
         break;
       default:
         break;
@@ -50,7 +50,7 @@ export class HeadComponent implements OnInit {
 
   changeLanguage(newLanguage: string) {
     if (newLanguage !== this.selectedLanguage) {
-      this.selectedLanguage = newLanguage; // Actualiza el idioma seleccionado
+      this.selectedLanguage = newLanguage;
       this.languageService.changeLanguage(newLanguage);
     }
   }

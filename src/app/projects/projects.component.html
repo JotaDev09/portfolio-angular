@@ -1,17 +1,30 @@
 <section class="projects_section column-center" id="projectsSection">
-    <div class="all_projects">
-        <div class="projects_title_cont">
-            <a class="projects_title">{{projectsTitle}}</a><br>
-        </div>
-        <div class="projects_container wrap-center" id="projectsContainer">
-            <div *ngFor="let project of projects" class="projects column-center-center">
-                <img class="projects_img" [style.backgroundImage]="'url(' + project.screenshot + ')'"
-                    (click)="openWebsite(project.website)">
-                <div class="projects_name_cont">
-                    <a class="projects_name" id="projectsName">{{ project.name }}</a>
-                    <img class="projects_github" src="assets/icons/github.svg" (click)="openGithub(project.github)">
-                </div>
-            </div>
-        </div>
+  <div class="all_projects">
+    <div class="projects_title_cont">
+      <a class="projects_title">{{projectsTitle}}</a><br>
     </div>
+
+    <mat-form-field class="project_type">
+      <mat-label class="project_type_title">Type:</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let type of types" [value]="type" (click)="changeProjectType(type)">
+          {{ type }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="projects_container wrap-center" id="projectsContainer">
+      <div *ngFor="let project of filteredProjects" class="projects column-center-center">
+        <img class="projects_img" [style.backgroundImage]="'url(' + project.screenshot + ')'"
+          (click)="openWebsite(project.website)">
+        <div>
+          <a class="projects_types">{{ project.type.slice(1).join(' | ') }}</a>
+        </div>
+        <div class="projects_name_cont">
+          <a class="projects_name" id="projectsName">{{ project.name }}</a>
+          <img class="projects_github" src="assets/icons/github.svg" (click)="openGithub(project.github)">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

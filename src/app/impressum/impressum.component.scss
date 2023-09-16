@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.impressum {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_att {
+  padding-bottom: 20px;
+}
+
+.impressum_title {
+  font-size: 25px;
+  color: #00cfff;
+}
+
+.impressum_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  a {
+    text-decoration: none;
+    color: #2a2a79;
+  }
+}

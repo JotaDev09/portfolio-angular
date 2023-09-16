@@ -1,22 +1,22 @@
 <div class="head_container">
-    <div class="head_logo_menu" id="head_menu">
-        <div class="head_logo">
-            <img class="logo" src="./assets/logo/logo.png">
-        </div>
-        <button id="headButton" class="head_button">MENU</button>
-        <div class="head_menu" id="headLinks">
-            <a id="menuHome" class="menu_contain menu-link" href="#homeSection">{{ menuHome }}</a>
-            <a id="menuMe" class="menu_contain menu-link" href="#aboutMeSection">{{ menuMe }}</a>
-            <a id="menuProjects" class="menu_contain menu-link" href="#projectsSection">{{ menuProjects }}</a>
-            <a id="menucontact" class="menu_contain menu-link" href="#contactSection">{{ menucontact }}</a>
-        </div>
-        <div class="head_languages">
-            <a id="english" href="#" (click)="changeLanguage('english')"
-                [ngClass]="{'selected-language': selectedLanguage === 'english'}">EN</a>
-            <a id="german" href="#" (click)="changeLanguage('german')"
-                [ngClass]="{'selected-language': selectedLanguage === 'german'}">DE</a>
-            <a id="spanish" href="#" (click)="changeLanguage('spanish')"
-                [ngClass]="{'selected-language': selectedLanguage === 'spanish'}">ES</a>
-        </div>
+  <div class="head_logo_menu" id="head_menu">
+    <div class="head_logo" routerLink="/">
+      <img class="logo" src="./assets/logo/logo.png">
     </div>
+    <button id="headButton" class="head_button">MENU</button>
+    <div class="head_menu" id="headLinks">
+      <a id="menuHome" class="menu_contain menu-link" href="#homeSection">{{ menuHome }}</a>
+      <a id="menuMe" class="menu_contain menu-link" href="#aboutMeSection">{{ menuMe }}</a>
+      <a id="menuProjects" class="menu_contain menu-link" href="#projectsSection">{{ menuProjects }}</a>
+      <a id="menucontact" class="menu_contain menu-link" href="#contactSection">{{ menucontact }}</a>
+    </div>
+    <div class="head_languages">
+      <a id="english" href="#" (click)="changeLanguage('english')"
+        [ngClass]="{'selected-language': selectedLanguage === 'english'}">EN</a>
+      <a id="german" href="#" (click)="changeLanguage('german')"
+        [ngClass]="{'selected-language': selectedLanguage === 'german'}">DE</a>
+      <a id="spanish" href="#" (click)="changeLanguage('spanish')"
+        [ngClass]="{'selected-language': selectedLanguage === 'spanish'}">ES</a>
+    </div>
+  </div>
 </div>
