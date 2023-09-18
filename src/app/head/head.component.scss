@@ -44,20 +44,25 @@
   }
 }
 
-.head_languages a {
-  text-decoration: none;
-  color: #2a2a79;
-  padding-right: 3px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
+.head_languages {
+  display: flex;
+  gap: 14px;
 
-  &:hover {
-    color: #00cfff;
-  }
+  a {
+    text-decoration: none;
+    color: #2a2a79;
+    padding-right: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
 
-  &:active {
-    color: #00cfff;
+    &:hover {
+      color: #00cfff;
+    }
+
+    &:active {
+      color: #00cfff;
+    }
   }
 }
 
@@ -132,14 +137,6 @@
 
 @media (width < 600px) {
   .head_menu {
-    a {
-      font-size: 12px;
-    }
-  }
-}
-
-@media (width < 500px) {
-  .head_menu {
     display: none;
   }
 
@@ -192,7 +189,7 @@
   }
 }
 
-@media (width < 350px) {
+@media (width < 400px) {
   .head_button {
     padding: 10px 30px;
 
