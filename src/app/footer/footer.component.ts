@@ -59,8 +59,4 @@ export class FooterComponent implements OnInit {
         break;
     }
   }
-
-  openAttribution() {
-    this.router.navigateByUrl('/attributions');
-  }
 }

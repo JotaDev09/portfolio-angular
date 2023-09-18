@@ -1,7 +1,7 @@
 <div class="head_container">
   <div class="head_logo_menu" id="head_menu">
     <div class="head_logo" routerLink="/">
-      <img class="logo" src="assets/logo/logo.png">
+      <img class=" logo" src="assets/logo/logo.png">
     </div>
     <div id="headButton" (click)="openMenu()">
       <div class="head_button" [ngStyle]="{'display': menubutton ? 'flex' : 'none'}">
@@ -26,11 +26,11 @@
         }}</a>
     </div>
     <div class="head_languages">
-      <a id="english" href="#" (click)="changeLanguage('english')"
+      <a id="english" (click)="changeLanguage('english')"
         [ngClass]="{'selected-language': selectedLanguage === 'english'}">EN</a>
-      <a id="german" href="#" (click)="changeLanguage('german')"
+      <a id="german" (click)="changeLanguage('german')"
         [ngClass]="{'selected-language': selectedLanguage === 'german'}">DE</a>
-      <a id="spanish" href="#" (click)="changeLanguage('spanish')"
+      <a id="spanish" (click)="changeLanguage('spanish')"
         [ngClass]="{'selected-language': selectedLanguage === 'spanish'}">ES</a>
     </div>
   </div>

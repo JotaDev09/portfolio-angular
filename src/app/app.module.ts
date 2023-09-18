@@ -25,9 +25,9 @@ import { ImpressumComponent } from './impressum/impressum.component';
     FooterComponent,
     ImpressumComponent,
     WebSiteCompleteComponent,
+    HeadComponent,
   ],
   imports: [
-    HeadComponent,
     ProjectsComponent,
     BrowserModule,
     AppRoutingModule,

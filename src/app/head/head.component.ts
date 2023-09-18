@@ -5,20 +5,21 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgForOf } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-head',
   templateUrl: './head.component.html',
   styleUrls: ['./head.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  standalone: true,
-  imports: [
-    MatFormFieldModule,
-    MatSelectModule,
-    MatInputModule,
-    NgForOf,
-    CommonModule,
-  ],
+  //standalone: true,
+  //  imports: [
+  // //   MatFormFieldModule,
+  // //   MatSelectModule,
+  // //   MatInputModule,
+  //    NgForOf,
+  // //   CommonModule,
+  //  ],
 })
 export class HeadComponent implements OnInit {
   menuHome: string = '';
@@ -29,7 +30,10 @@ export class HeadComponent implements OnInit {
   menuVisible = false;
   menubutton = false;
 
-  constructor(private languageService: LanguageService) {}
+  constructor(
+    private languageService: LanguageService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.languageService.currentLanguage$.subscribe((newLanguage: string) => {
