@@ -20,14 +20,14 @@ import { ImpressumComponent } from './impressum/impressum.component';
   declarations: [
     AppComponent,
     AttributionsComponent,
-    HeadComponent,
     HomeSectionComponent,
     AboutMeSectionComponent,
     FooterComponent,
-    WebSiteCompleteComponent,
     ImpressumComponent,
+    WebSiteCompleteComponent,
   ],
   imports: [
+    HeadComponent,
     ProjectsComponent,
     BrowserModule,
     AppRoutingModule,

@@ -25,13 +25,13 @@ export class ProjectsComponent implements OnInit {
   types: string[] = ['All', 'Javascript', 'Angular', 'React'];
 
   projects = [
-    {
-      name: 'Portfolio',
-      github: 'https://github.com/JotaDev09/portfolio-angular',
-      screenshot: 'assets/img/portfolio.png',
-      website: 'https://juan-desantos.developerakademie.net/portfolio',
-      type: ['All', 'Angular', 'Typescript', 'SASS', 'HTML'],
-    },
+    // {
+    //   name: 'Portfolio',
+    //   github: 'https://github.com/JotaDev09/portfolio-angular',
+    //   screenshot: 'assets/img/portfolio.png',
+    //   website: 'https://juan-desantos.developerakademie.net/portfolio',
+    //   type: ['All', 'Angular', 'Typescript', 'SASS', 'HTML'],
+    // },
     {
       name: 'Join',
       github: 'https://github.com/JotaDev09/Join.git',
@@ -58,21 +58,21 @@ export class ProjectsComponent implements OnInit {
       github: 'https://github.com/JotaDev09/BookStore.git',
       screenshot: 'assets/img/library.png',
       website: 'https://jotadev09.github.io/BookStore',
-      type: ['All', 'React', 'Javascript', 'CSS', 'HTML'],
+      type: ['All', 'React', 'Javascript', 'CSS', 'HTML', 'API'],
     },
-    {
-      name: 'Weather App',
-      github: 'https://github.com/JotaDev09/WeatherApp.git',
-      screenshot: 'assets/img/weatherApp.png',
-      website: 'https://jotadev09.github.io/WeatherApp/',
-      type: ['All', 'Javascript', 'CSS', 'HTML'],
-    },
+    // {
+    //   name: 'Weather App',
+    //   github: 'https://github.com/JotaDev09/WeatherApp.git',
+    //   screenshot: 'assets/img/weatherApp.png',
+    //   website: 'https://jotadev09.github.io/WeatherApp/',
+    //   type: ['All', 'Javascript', 'CSS', 'HTML'],
+    // },
     {
       name: 'Pokédev',
       github: 'https://github.com/JotaDev09/Pokedev.git',
       screenshot: 'assets/img/pokedev.png',
       website: 'https://jotadev09.github.io/Pokedev/',
-      type: ['All', 'Javascript', 'CSS', 'HTML'],
+      type: ['All', 'Javascript', 'CSS', 'HTML', 'API'],
     },
   ];
 

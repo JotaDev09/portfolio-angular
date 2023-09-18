@@ -1,10 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { LanguageService } from '../language.service';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgForOf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-head',
   templateUrl: './head.component.html',
   styleUrls: ['./head.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+  standalone: true,
+  imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    NgForOf,
+    CommonModule,
+  ],
 })
 export class HeadComponent implements OnInit {
   menuHome: string = '';
@@ -12,6 +26,8 @@ export class HeadComponent implements OnInit {
   menuProjects: string = '';
   menucontact: string = '';
   selectedLanguage: string = 'english';
+  menuVisible = false;
+  menubutton = false;
 
   constructor(private languageService: LanguageService) {}
 
@@ -53,5 +69,17 @@ export class HeadComponent implements OnInit {
       this.selectedLanguage = newLanguage;
       this.languageService.changeLanguage(newLanguage);
     }
+  }
+
+  scrollToSection(sectionId: string): void {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  openMenu() {
+    this.menubutton = !this.menubutton;
+    this.menuVisible = !this.menuVisible;
   }
 }

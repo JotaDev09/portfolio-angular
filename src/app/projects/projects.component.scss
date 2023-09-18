@@ -89,7 +89,7 @@
   background: center;
   background-size: cover;
   cursor: pointer;
-  transition: width 2s, height 2s;
+  transition: width 1s, height 1s;
 
   &:hover {
     width: 250px;
@@ -101,6 +101,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .projects_name {
@@ -146,6 +147,12 @@
     }
   }
 
+  .projects_types {
+    width: 165px;
+    display: flex;
+    font-size: 10px;
+  }
+
   .projects.projects_title {
     font-size: 20px;
   }
@@ -176,6 +183,10 @@
       width: 175px;
       height: 175px;
     }
+  }
+
+  .projects_types {
+    width: 136px;
   }
 
   .projects_name {

@@ -21,7 +21,7 @@
           <a class="projects_types">{{ project.type.slice(1).join(' | ') }}</a>
         </div>
         <div class="projects_name_cont">
-          <a class="projects_name" id="projectsName">{{ project.name }}</a>
+          <a class="projects_name" id="projectsName" (click)="openGithub(project.github)">{{ project.name }}</a>
           <img class="projects_github" src="assets/icons/github.svg" (click)="openGithub(project.github)">
         </div>
       </div>
